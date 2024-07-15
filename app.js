@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const apiKey = "w4EyDPAJhvaChfYGiAFBK0A0cVHyxb75"; // Use provided API key
+    const apiKey = "5fnMTAw6MCuJPrIksg89U3h3FnJxTrC2"; // Use provided API key
     const form = document.getElementById("cityForm");
     const weatherDiv = document.getElementById("weather");
     const dailyForecastDiv = document.getElementById("daily-forecast");
@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function getWeather(city) {
         const url = `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${city}`;
+
 
         fetch(url)
             .then(response => response.json())
