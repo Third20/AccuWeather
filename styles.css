@@ -1,15 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
     padding: 20px;
-    background-color: gray;
+    background-color: #f0f0f0; /* Light grey background */
 }
 
 h1 {
     margin-bottom: 20px;
+    color: #333; /* Dark grey text */
 }
 
 form {
@@ -19,57 +20,46 @@ form {
 #cityInput {
     padding: 10px;
     font-size: 16px;
-    background-color: darkgrey;
-    color: White;
+    background-color: #ccc; /* Light grey input background */
+    color: #333; /* Dark grey text */
+    border: none;
+    border-radius: 20px; /* Rounded input */
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: darkgray;
+    background-color: #666; /* Dark button background */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px; /* Rounded button */
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: black;
+    background-color: #555; /* Darker background on hover */
 }
 
-#weather {
+#weather, #daily-forecast, #hourly-forecast {
     margin-top: 20px;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 20px; /* Rounded forecast containers */
     width: 300px;
-    background-color: darkgray;
+    background-color: #ccc; /* Light grey background */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     margin: 0;
     font-size: 1.5em;
+    color: #333; /* Dark grey text */
 }
 
 p {
     margin: 5px 0;
-}
-
-
-#daily-forecast, #hourly-forecast {
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 300px;
-    background-color: darkgray;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-#daily-forecast h2, #hourly-forecast h2 {
-    margin: 0;
-    font-size: 1.5em;
+    color: #555; /* Medium grey text */
 }
 
 .forecast-item {
@@ -78,4 +68,7 @@ p {
 
 .forecast-item img {
     vertical-align: middle;
+    max-width: 50px; /* Limit icon size */
+    border-radius: 50%; /* Circular icon */
+    margin-right: 10px;
 }
